@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title></title>
+    </head>
+    <body>
+
+      <div class="container">
+        <img class="logo" src="assets/logo.png" alt="YOOBEE LOGO">
+        <?php include("currenttime.php") ?>
+
+        <form class="form" action="test.php" name="shape" method="post">
+            <div class="div3">
+              <p class="ptag">Please choose the shape for which you want to calculate properties.</p>
+                <div class="checks">
+                  Circle <input type="checkbox" name="circle" value="">
+                  Square <input type="checkbox" name="square" value="">
+                  Rectangle <input type="checkbox" name="rectangle" value="">
+                </div>
+            </div>
+
+            <div class="div1">
+              <p class="radius">Enter the Radius</p>
+                <input class="radius-input" type="text" name="radius" value="Radius"/>
+            </div>
+
+          <input class="btn" type="submit" name="button" value="Submit Form">
+          </form>
+
+      </div>
+    </body>
+</html>
